@@ -10,4 +10,5 @@ type Book struct {
 	WeekChaptersTypes []WeekChapterType
 	CalendarTypes     []YearType
 	NumberTypes       []NumberType
+	LiveBookTypes     []LiveBookType
 }
