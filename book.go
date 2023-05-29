@@ -5,7 +5,8 @@ import "gorm.io/gorm"
 // Book Тут перечисляются все книги которые мы показываем, например ЙОМ-ЙОМ, ХУМАШ и т.д.
 type Book struct {
 	gorm.Model
-	Name              string
+	Code              string
+	BookName          string
 	BookTypeID        string `gorm:"foreignKey:ID"`
 	WeekChaptersTypes []WeekChapterType
 	CalendarTypes     []YearType
