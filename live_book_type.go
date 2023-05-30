@@ -11,5 +11,6 @@ type LiveBookType struct {
 	ParentID  *uint          `gorm:"index;autoIncrement:false"` // Обновите тип ParentID на *uint
 	Parent    *LiveBookType  `gorm:"foreignkey:ParentID"`
 	Children  []LiveBookType `gorm:"foreignkey:ParentID"`
+	File      string
 	Content   Content
 }
