@@ -7,6 +7,7 @@ type Book struct {
 	gorm.Model
 	Code              string
 	BookName          string
+	Description       string
 	BookTypeID        string `gorm:"foreignKey:ID"`
 	WeekChaptersTypes []WeekChapterType
 	CalendarTypes     []YearType

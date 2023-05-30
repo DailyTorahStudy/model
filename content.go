@@ -8,8 +8,6 @@ import (
 type Content struct {
 	gorm.Model
 	ParentID         *int
-	Parent           *Content  `gorm:"foreignkey:ParentID"`
-	Children         []Content `gorm:"foreignkey:ParentID"`
 	Order            uint8
 	ContentParagraph []ContentParagraph
 }
