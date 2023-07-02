@@ -4,9 +4,9 @@ import "gorm.io/gorm"
 
 type WeekChapterType struct {
 	gorm.Model
-	BookID    uint
-	ParshaID  uint8
-	DayOfWeek uint8
-	ContentID uint `gorm:"index"`
+	BookID    uint  `gorm:"index"`
+	ParshaID  uint8 `gorm:"index"`
+	DayOfWeek uint8 `gorm:"index"`
+	ContentID uint  `gorm:"index"`
 	Content   Content
 }
