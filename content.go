@@ -14,9 +14,9 @@ type Content struct {
 
 type ContentParagraph struct {
 	gorm.Model
-	ContentID uint
+	ContentID uint `gorm:"index:idx_content_lang"`
 	Order     uint16
-	Lang      string
+	Lang      string `gorm:"index:idx_content_lang"`
 	Html      string
 }
 
